@@ -1,0 +1,19 @@
+.info
+	font-size: 18px
+	position: relative
+	padding-left: 35px
+	&::before
+		content: ''
+		position: absolute
+		width: 21px
+		height: 21px
+		background-repeat: no-repeat
+		background-position: center
+		top: 50%
+		transform: translate(0%, -50%)
+		left: 0
+.info--tel::before
+	background-image: url(../icons/phone-call.svg)
+
+.info--map::before
+	background-image: url(../icons/placeholder.svg)

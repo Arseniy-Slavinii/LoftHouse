@@ -1,0 +1,58 @@
+@use '../decorations' as *
+.video
+	text-align: center
+	position: relative
+	overflow: hidden
+	&::after
+		content: 'IV'
+		left: calc( 50% + 340px )
+		translate: (-50%, 0%)
+		line-height: 1.15
+		bottom: 118px
+		@include decorNumber
+	.container
+		display: flex
+// .video__window
+// 	width: 600px
+// 	height: 350px
+
+.video_link
+	position: relative
+	display: inline-block
+	text-align: center
+	width: 100%
+	.video_img
+		max-width: 720px
+		max-height: 650px
+		width: 100%
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(36, 43, 51, 0.80)
+		transition: background 0.2s ease-in
+	&:hover::before
+		background: rgba(36, 43, 51, 0.70)
+.video_icon
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	transition: all 0.2s ease-in
+	@include adaptation-999
+		width: 80px
+		height: 80px
+.video_link:hover .video_icon
+	transform: translate(-50%, -50%) scale(1.2)
+	filter: saturate(1.5)
+
+@include adaptation_300
+	.video_link
+		width: 300px
+
+@include adaptation_600
+	.video_link
+		width: 750px

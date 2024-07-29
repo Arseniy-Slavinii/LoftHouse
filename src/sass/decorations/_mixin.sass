@@ -1,0 +1,17 @@
+@mixin decorNumber
+	position: absolute
+	color: #fff
+	font-family:"Playfair Display", serif
+	font-size: 400px
+	font-weight: 700
+	opacity: 0.02
+	z-index: -1
+@mixin adaptation_999
+	@media (max-width: 945px)
+		@content
+@mixin adaptation_600
+	@media (max-width: 600px)
+		@content
+@mixin adaptation_300
+	@media (max-width: 300px)
+		@content

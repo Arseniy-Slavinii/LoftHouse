@@ -1,0 +1,27 @@
+@use '../decorations' as *
+.section_map
+	padding: 180px 0
+	position: relative
+	.container
+		padding: 0 15px
+	&::before
+		content: 'V'
+		right: calc(50% + 435px)
+		translate: (50%, 0%)
+		line-height: 1
+		top: 230px
+		z-index: -1
+		@include decorNumber
+		@include adaptation-999
+			padding: 90px 0
+.section_map_title
+	margin-bottom: 88px
+	@include adaptation-999
+		margin-bottom: 44px
+.section_map_map
+	padding: 0 70px
+	max-height: 400px
+	// min-width: 600px
+.map
+	background: #626262
+	height: 358px

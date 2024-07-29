@@ -1,0 +1,28 @@
+@use '../decorations' as *
+.cta
+	padding: 180px 0
+	background: url("../bg/section_fourth.jpg")
+	@include adaptation-999
+		padding: 60px 0
+.cta_title
+	margin-bottom: 17px
+	padding: 0 15px
+.cta_wrapper
+	display: grid
+	grid-template-columns: repeat(2,1fr)
+	gap: 30px
+	@include adaptation-999
+		grid-template-columns: 1fr
+.cta_text
+	color: $white
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.5
+	@include adaptation-999
+		font-size: 14px
+.cta_form
+	display: grid
+	grid-template-columns: 1fr 1fr
+	gap: 35px 30px
+	@include adaptation-999
+		grid-template-columns: 1fr

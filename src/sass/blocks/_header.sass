@@ -1,0 +1,142 @@
+@use '../decorations' as *
+
+.header
+	padding: 34px 0 74px
+	min-height: 800px
+	background: url('../bg/Rectangle.png') (center / cover) no-repeat
+	.container
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 0 42px
+
+.wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 110px
+	width: 100%
+	position: relative
+.menu__list
+	display: flex
+	align-items: center
+	column-gap: 25px
+	@include adaptation_999
+		display: block
+.menu__item
+	margin-right: 20px
+	line-height: 30px
+	&:nth-child(4)
+		margin-right: 0
+	@include adaptation_999
+		line-height: 30px
+.menu__link
+	font-size: 16px
+	@include adaptation_999
+		color: #fff
+		font-size: 21px
+		display: block
+		padding: 10px 0
+.logo__secondary
+	color: $white
+	font-size: 0.8em
+	font-weight: 400
+	text-align: center
+.header__title
+	color: $accent
+	text-align: center
+	font-family: $font_accent
+	font-size: 40px
+	font-weight: 700
+	position: relative
+	margin-bottom: 200px
+	@include adaptation_999
+		font-size: 20px
+.title__mouse
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	@include adaptation_999
+		bottom: -30px
+.header__bottom
+	display: grid
+	grid-template-columns: 1fr 1fr
+	column-gap: 58px
+	@include adaptation_999
+		grid-template-columns: 1fr
+		gap: 26px
+		justify-items: center
+.graphics
+	color: $white
+	font-weight: 400
+	font-size: 18px
+	position: relative
+	padding-left: 35px
+	&::before
+		content: ''
+		position: absolute
+		width: 21px
+		height: 21px
+		background-repeat: no-repeat
+		background-position: center
+		top: 50%
+		left: 0
+		transform: translate(0%, -50%)
+.graphics--tel::before
+	background-image: url(../icons/phone-call.svg)
+
+.graphics--map::before
+	background-image: url(../icons/placeholder.svg)
+.header__burger-btn
+	width: 40px
+	height: 40px
+	border: none
+	background-color: transparent
+	position: relative
+	display: none
+	z-index: 11
+	margin-top: 30px
+	@include adaptation_999
+		display: block
+	span
+		position: absolute
+		width: 30px
+		height: 3px
+		background-color: #000000
+		left: 5px
+		transition: transform .5s, opacity .5s, background-color .5s
+		&:nth-child(1)
+			transform: translateY(-10px)
+		&:nth-child(3)
+			transform: translateY(10px)
+.header.open
+	span
+		background-color: #fff
+		&:nth-child(1)
+			transform: translateY(0) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform: translateY(0) rotate(-45deg)
+@include adaptation_999
+	.header.open
+		.menu
+			position: absolute
+			z-index: 10
+			left: 0
+			top: 0
+			width: 100%
+			height: 100vh
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $dark
+		.container
+			padding: 0
+		.header__burger-btn
+			margin-left: 40px
+	.header
+		.menu
+			display: none
+			transition: display .2s ease

@@ -1,0 +1,21 @@
+@use '../decorations' as *
+.apartments
+	position: relative
+	&_title
+		margin-bottom: 88px
+		padding-left: 20px
+		@include adaptation-999
+			margin-bottom: 44px
+	&::before
+		content: 'III'
+		right: calc( 50% + 343px )
+		translate: (50%, 50%)
+		bottom: 337px
+		@include decorNumber
+	&_cards
+		display: grid
+		grid-template-columns: repeat(2,1fr)
+		gap: 38px
+		justify-items: center
+		@include adaptation-999
+			grid-template-columns: repeat(auto-fit,minmax(290px, 1fr))

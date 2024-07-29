@@ -1,0 +1,26 @@
+@use '../decorations' as *
+.footer
+	background-color: $footer-bg
+	padding-top: 72px
+	padding-bottom: 51px
+	font-size: 14px
+	letter-spacing: 0.05em
+	@include adaptation-999
+		padding: 36px 0 25px
+.footer_grid
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	gap: 30px
+	padding: 0 15px
+	@include adaptation-999
+		gap: 40px 30px
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr))
+.footer_logo
+	margin-top: -12px
+.footer_nav_list
+	display: grid
+	gap: 15px
+.footer_socials
+	display: flex
+	column-gap: 22px
+	align-items: center

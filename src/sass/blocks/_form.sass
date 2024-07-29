@@ -1,0 +1,32 @@
+@use '../decorations' as *
+.form_input
+	padding: 12px
+	text-align: center
+	background-color: rgba(255, 255, 255, 0.2)
+	color: $white
+	font-size: 14px
+	transition: background-color 0.2 ease-in
+	&:focus
+		background-color: rgba(255, 255, 255, 0.25)
+	// color adjusment 
+	&::placeholder
+		color: $placeholder_color
+		
+.form_button
+	background-color: $accent
+	padding: 12px
+	color: $white
+	text-align: center
+	border: none
+	transition: background-color 0.2 ease-in
+	&:hover
+		background-color: saturate($accent,10% )
+.form_privacy
+	color: $privacy
+	text-align: center
+	font-size: 13px
+	font-weight: 400
+	line-height: 1.23
+	&--bottom
+		@include adaptation-999
+			grid-row: 4/5
