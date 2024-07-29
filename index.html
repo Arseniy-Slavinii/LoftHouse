@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoftHouse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,
+	wght@0,500;0,700;1,500&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=353df352-c746-4136-a9b4-5468d96b432d&lang=ru_RU"></script>
+  </head>
+  <body>
+    <header class="header none1">
+      <div class="container">
+        <div class="wrapper">
+          <button class="header__burger-btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="header__logo">
+            <div class="logo__main">
+              <a href="#" class="logo__link"
+                ><img
+                  src="icons/LoftHouse.svg"
+                  alt="LoftHouse"
+                  class="logo__img"
+              /></a>
+            </div>
+            <div class="logo__secondary">ЖИЛОЙ КОМПЛЕКС</div>
+          </div>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">О комплексе</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#" class="menu__link">Район</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#" class="menu__link">Каталог квартир</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#" class="menu__link">Ипотека</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__title">
+          <h1>Жилой комплекс в историческом центре</h1>
+          <img src="icons/mouse.svg" alt="mouse" class="title__mouse" />
+        </div>
+        <div class="header__bottom">
+          <a href="#" class="graphics graphics--map"
+            >Наб. реки Фонтанки 10-15</a
+          >
+          <a href="tel:+788121234567" class="graphics graphics--tel"
+            >8 (812) 123-45-67</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="none1">
+      <section class="benefits none1">
+        <div class="container container--sm">
+          <div class="benefits_row">
+            <div class="benefits_item">
+              <img src="img/bench.svg" alt="facility" class="benefits_img" />
+              <p class="benefits_text">
+                Рядом исторические парки&nbsp;и&nbsp;скверы
+              </p>
+            </div>
+
+            <div class="benefits_item">
+              <img src="img/building.svg" alt="facility" class="benefits_img" />
+              <p class="benefits_text">Полностью обустроенный</p>
+            </div>
+
+            <div class="benefits_item">
+              <img src="img/fountain.svg" alt="facility" class="benefits_img" />
+              <p class="benefits_text">10 фонтанов на территории</p>
+            </div>
+
+            <div class="benefits_item">
+              <img src="img/bicycle.svg" alt="facility" class="benefits_img" />
+              <p class="benefits_text">6 км велодорожек</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="apartments none1">
+        <div class="container">
+          <div class="apartments_title">
+            <h2 class="title_2">Наши квартиры</h2>
+          </div>
+          <div class="apartments_cards">
+            <a href="#" class="card">
+              <img src="img/01.svg" alt="rooms pics" class="card_img" />
+              <h3 class="card_title">Пентхаус “Loft Олимп”</h3>
+            </a>
+
+            <a href="#" class="card">
+              <img src="img/02.svg" alt="rooms pics" class="card_img" />
+              <h3 class="card_title">Апартаменты “Nice Loft”</h3>
+            </a>
+
+            <a href="#" class="card">
+              <img src="img/03.svg" alt="rooms pics" class="card_img" />
+              <h3 class="card_title">Апартаменты “Loft Studio”</h3>
+            </a>
+
+            <a href="#" class="card">
+              <img src="img/04.svg" alt="rooms pics" class="card_img" />
+              <h3 class="card_title">Loft квартира “Престиж”</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta none1">
+        <div class="container">
+          <div class="cta_title">
+            <h2 class="title_2">Хотите посмотреть?</h2>
+            <div class="cta_wrapper">
+              <div class="cta_text">
+                <p>
+                  ЖК LoftHouse – это проект бизнес-класса, расположенный в
+                  центре города, на Наб. реки Фонтанки 10-15. Комплекс
+                  предлагает своим жильцам квартиры площадью от 40 до 170 кв. м.
+                  В здании будет три секции, в которых разместится всего 56
+                  квартир.
+                </p>
+              </div>
+              <form action="" class="cta_form form">
+                <input type="text" class="form_input" placeholder="Ваше имя" />
+                <input
+                  data-tel-input
+                  type="text"
+                  class="form_input"
+                  placeholder="Ваш телефон"
+                />
+                <p class="form_privacy form_privacy--bottom">
+                  *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+                  базу.
+                </p>
+
+                <button type="submit" class="form_button">
+                  Посмотреть район
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video none1">
+        <div class="container">
+          <a
+            href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+            data-youtubeLightbox
+            class="video_link"
+          >
+            <img
+              src="icons/play-button.svg"
+              alt="play button"
+              class="video_icon"
+            />
+            <img src="bg/video_bg.jpg" alt="play button" class="video_img" />
+          </a>
+        </div>
+      </section>
+
+      <section class="section_map none1">
+        <div class="container">
+          <div class="section_map_title">
+            <h2 class="title_2">Район на карте</h2>
+          </div>
+          <div class="section_map_map">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback none1">
+        <div class="container">
+          <div class="feedback_title">
+            <div class="title_2">Есть вопросы?</div>
+          </div>
+          <form class="feedback_form form">
+            <p class="form_privacy form_privacy--bottom">
+              *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+              базу.
+            </p>
+
+            <input type="text" class="form_input" placeholder="Ваше имя" />
+            <input
+              data-tel-input
+              type="text"
+              class="form_input"
+              placeholder="Ваш телефон"
+            />
+
+            <button type="submit" class="form_button">Посмотреть район</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer none1">
+      <div class="container">
+        <div class="footer_grid">
+          <div class="footer_logo">
+            <a href="#">
+              <img src="icons/LoftHouse.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="footer_nav">
+            <nav class="nav">
+              <ul class="footer_nav_list">
+                <li><a href="#">О комплексе</a></li>
+                <li><a href="#">Район</a></li>
+                <li><a href="#">Каталог квартир</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer_nav">
+            <nav class="nav">
+              <ul class="footer_nav_list">
+                <li><a href="#">Поселение и переезд</a></li>
+                <li><a href="#">Сервисные услуги</a></li>
+                <li><a href="#">Экологическая устойчивость</a></li>
+                <li><a href="#">Инвестиционные возможности</a></li>
+                <li><a href="#">Программа лояльности </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer_address">
+            <ul class="footer_nav_list">
+              <li>Адрес: Наб. реки Фонтанки 10-15</li>
+              <li>
+                Телефон: <a href="tel:+78121234567"> 8 (812) 123-45-67</a>
+              </li>
+              <li>Отдел продаж: 10:00 - 20:00</li>
+              <li>
+                E-mail:
+                <a class="link-bold" href="mailto:vip@lofthouse.ru"
+                  >vip@lofthouse.ru</a
+                >
+              </li>
+            </ul>
+
+            <ul class="footer_socials">
+              <li>
+                <a href="#"
+                  ><img src="icons/youtube.svg" alt="youtube_icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="icons/vk.svg" alt="VK_icon" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icons/facebook.svg" alt="facebook_icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="icons/instagram.svg" alt="instagram_icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="youtubelightbox" class="youtubelightbox">
+      <div id="youtubelightbox__centeredchild">
+        <div id="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
